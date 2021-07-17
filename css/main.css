@@ -77,11 +77,13 @@
 {
 	background-color: white;
 	height: 100%;
-	width: 100%;
+	width: 0%;
 	position: absolute;
 	mix-blend-mode: difference;
 	animation: loading 1s ;
+	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
+	animation-delay: 0.5s;
 }
 
 #preloader > .logo
