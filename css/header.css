@@ -1,0 +1,83 @@
+.header
+{
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	height: 4em;
+	max-height: 4em;
+	background-color: rgba(0,0,0, 0.9);
+}
+
+.header-logo
+{
+	float: left;
+	height: 4em;
+	line-height: 4em;
+	padding-left: 2em;
+	padding-right: 2em;
+	transition: all 0.15s;
+}
+
+.header-logo:hover
+{
+	background-color: #E8E8E8FF;
+	box-shadow: 0 0 10px 0px rgb(255, 255, 255);
+	color: rgba(0, 0, 0, 0.9);
+}
+
+.header-logo > span
+{
+	font-size: 35px;
+}
+
+#small-logo
+{
+	line-height: 3em;
+	margin-left: 5px;
+	font-size: 17px;
+}
+
+.header-button-area
+{
+	float: right;
+	height: 4em;
+	max-height: 4em;
+}
+
+.header-button
+{
+	border: none;
+	background-color: transparent;
+	color: #E8E8E8FF;
+
+	font-family: 'Inter', sans-serif;
+	font-size: 30px;
+
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 100%;
+	transition: all 0.15s ease-out;
+}
+
+.header-button:hover
+{	
+	background-color: #E8E8E8FF;
+	color: rgba(0, 0, 0, 0.9);
+	box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.scroll-bar
+{
+	height: 1px;
+	background-color: transparent;
+	width: 100%;
+	float: left;
+}
+
+.current-scroll
+{
+	height: 1px;
+	background-color: #E8E8E8FF;
+	width: 0px;
+}
