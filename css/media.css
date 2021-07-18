@@ -48,7 +48,7 @@ a
 {
 	justify-self: center;
 	align-self: center;
-	grid-area: text;
+/* 	grid-area: text; */
 	margin: 2em;
 }
 
@@ -61,7 +61,10 @@ a
 }
 
 @media screen and (max-width: 718px) {
-/* стили для средних планшетов - начало */
+
+/* ДЛЯ ТЕЛЕФОНОВ */
+/* --------------------------------------- */
+
 .header
 {
 	position: fixed;
@@ -81,11 +84,30 @@ a
 
 .header-logo
 {
-	float: left;
-	height: 4em;
-	line-height: 4em;
-	padding-left: 2em;
-	padding-right: 2em;
+	width: 100%;
+	padding-left: 1em;
+}
+
+.about-page
+{
+	grid-template-columns: 1fr 2fr 2fr 1fr;
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-areas:'me me me me'  
+						'me me me me' 
+						'me me me me' 
+						'lang lang lang lang' 
+						'lang lang lang lang' 
+						'lang lang lang lang';
+}
+
+.about-lang
+{
+	grid-area: lang;
+}
+
+.about-me
+{
+	grid-area: me;
 }
 
 }
