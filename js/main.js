@@ -48,3 +48,9 @@ $(document).ready(function()
     var $circle = $('.circle');
     $circle.css('padding', 200)
 });
+
+$(function() {
+    
+    $('.drag').draggable({containment:".about-page"});
+    
+});
