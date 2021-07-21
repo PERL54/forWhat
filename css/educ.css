@@ -6,7 +6,7 @@
 	display: grid;
 	grid-template-rows: 1fr 2fr 1fr 2fr;
 	grid-template-columns: 1fr 3fr 1fr;
-	grid-template-areas: 'stroke stroke stroke' 'infinity infinity infinity' '. line .' '. info .';
+	grid-template-areas: 'stroke stroke stroke' 'ball1 infinity .' '. line ball2' '. info .';
 	background-color: white;
 	grid-gap: 1em;
 }
@@ -37,6 +37,7 @@
 	align-self: center;
 	font-size: 40px;
 	font-weight: bolder;
+	text-align: center;
 }
 
 .educ-info
@@ -50,4 +51,43 @@
 	display: block;
 	font-size: 20px;
 	line-height: 1.5em;
+}
+
+.ball1
+{
+	grid-area: ball1;
+	height: 10em;
+	width: 10em;
+	border-radius: 50%;
+	background-color: black;
+	justify-self: end;
+	align-self: end;
+	animation: jump 5s ease-in-out infinite;
+}
+
+.ball2
+{
+	grid-area: ball2;
+	height: 9em;
+	width: 9em;
+	border-radius: 50%;
+	background-color: black;
+	justify-self: start;
+	align-self: end;
+	animation: jump 5s ease-in-out infinite;
+	animation-delay: 2s;
+}
+
+@keyframes jump {
+	0% {
+		transform: translate(0, 0) scale(1);
+	}
+
+	50% {
+		transform: translate(0, 100px) scale(0.9);
+	}
+
+	100% {
+		transform: translate(0, 0) scale(1);
+	}
 }

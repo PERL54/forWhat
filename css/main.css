@@ -2,6 +2,7 @@
 @import url('header.css');
 @import url('educ.css');
 @import url('normalize.css');
+@import url('cont.css');
 
 .main-page
 {
@@ -48,6 +49,7 @@
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-blend-mode: difference;
 	grid-area: image;
 }
 
@@ -67,8 +69,6 @@
 
 #preloader {
   position: fixed;
-  left: 0;
-  top: 0;
   z-index: 999;
   width: 100%;
   height: 100%;

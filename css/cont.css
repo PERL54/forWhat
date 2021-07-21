@@ -1,0 +1,82 @@
+.cont-page
+{
+	height: 40vh;
+	position: relative;
+	background-color: black;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 0.5fr 5fr 0.5fr;
+	grid-template-areas: '. . . .' 'ball info1 info2 img' '. . . .';
+	grid-gap: 1em;
+}
+
+.info
+{
+	color: white;
+	font-size: 20px;
+	padding: 1em;
+
+}
+
+#info_1
+{
+	grid-area: info1;
+	align-self: center;
+}
+
+#info_2
+{
+	grid-area: info2;
+	align-self: center;
+}
+
+.info > span
+{
+	display: block;
+}
+
+.cont-img
+{
+	grid-area: img;
+	background-image: url('../images/OhAQ.gif');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.ball3
+{
+	grid-area: ball;
+	height: 9em;
+	width: 9em;
+	border-radius: 50%;
+	background-color: white;
+	justify-self: center;
+	align-self: center;
+	animation: jump 5s ease-in-out infinite;
+	animation-delay: 2s;
+}
+
+.ball4
+{
+	height: 3em;
+	width: 3em;
+	border-radius: 50%;
+	background-color: white;
+	mix-blend-mode: difference;
+	animation: jump 3s ease-in-out infinite;
+	animation-delay: 1s;
+}
+
+@keyframes jump {
+	0% {
+		transform: translate(0, -50px) scale(1);
+	}
+
+	50% {
+		transform: translate(0, 50px) scale(0.9);
+	}
+
+	100% {
+		transform: translate(0, -50px) scale(1);
+	}
+}

@@ -6,7 +6,7 @@
 	right: 0;
 	height: 4em;
 	max-height: 4em;
-	background-color: rgba(0,0,0, 0.9);
+	background-color: rgba(0,0,0, 1);
 }
 
 .header-logo
@@ -69,8 +69,8 @@
 
 .scroll-bar
 {
-	height: 1px;
-	background-color: transparent;
+	height: 3px;
+	background-color: black;
 	width: 100%;
 	float: left;
 }
@@ -78,6 +78,6 @@
 .current-scroll
 {
 	height: 1px;
-	background-color: #E8E8E8FF;
+	background-color: #e8e8e8ff;
 	width: 0px;
 }
