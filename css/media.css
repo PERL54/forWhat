@@ -21,13 +21,13 @@ a
 	color: #E8E8E8FF;
 }
 
-::-webkit-scrollbar { /* chrome based */
-    width: 0px;  /* ширина scrollbar'a */
-    background: transparent;  /* опционально */
+::-webkit-scrollbar 
+{
+    width: 0px; 
+    background: transparent; 
 }
 
-@media screen and (max-width: 991px)
-{
+@media screen and (max-width: 718px) {
 
 .main-content
 {
@@ -58,13 +58,6 @@ a
 	background-repeat: no-repeat;
 }
 
-}
-
-@media screen and (max-width: 718px) {
-
-/* ДЛЯ ТЕЛЕФОНОВ */
-/* --------------------------------------- */
-
 .header
 {
 	position: fixed;
@@ -90,14 +83,15 @@ a
 
 .about-page
 {
-	grid-template-columns: 1fr 2fr 2fr 1fr;
+	grid-template-columns: 0fr 3fr 3fr 0fr;
 	grid-template-rows: repeat(6, 1fr);
-	grid-template-areas:'me me me me'  
-						'me me me me' 
-						'me me me me' 
-						'lang lang lang lang' 
-						'lang lang lang lang' 
-						'lang lang lang lang';
+	grid-template-areas:'. me me .'  
+						'. me me .' 
+						'. me me .' 
+						'. lang lang .' 
+						'. lang lang .' 
+						'. lang lang .';
+	grid-gap: 10px;
 }
 
 .about-lang
@@ -108,6 +102,38 @@ a
 .about-me
 {
 	grid-area: me;
+}
+
+.secret
+{
+	display: none;
+}
+
+.educ-page
+{
+	grid-template-rows: 1fr 2fr 1fr 2fr;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-areas: 'stroke stroke stroke' 'infinity infinity infinity' 'line line line' '. info .';
+	background-color: white;
+	grid-gap: 1em;
+}
+
+.educ-infinity
+{
+	background-size: 90%;
+}
+
+.educ-line
+{
+	grid-area: line;
+	color: black;
+	justify-self: center;
+	align-self: center;
+	font-size: 20px;
+	font-weight: bolder;
+	text-align: center;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 }

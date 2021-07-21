@@ -1,0 +1,53 @@
+.educ-page
+{
+	height: 100vh;
+	max-height: 100vh;
+	position: relative;
+	display: grid;
+	grid-template-rows: 1fr 2fr 1fr 2fr;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-areas: 'stroke stroke stroke' 'infinity infinity infinity' '. line .' '. info .';
+	background-color: white;
+	grid-gap: 1em;
+}
+
+.educ-infinity
+{
+	justify-self: center;
+	align-self: end;
+	grid-area: infinity;
+	height: 100%;
+	width: 100%;
+	background-image: url('../images/infinity.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.strokes
+{
+	grid-area: stroke;
+}
+
+.educ-line
+{
+	grid-area: line;
+	color: black;
+	justify-self: center;
+	align-self: center;
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+.educ-info
+{
+	grid-area: info;
+	color: black;
+}
+
+.educ-info > span
+{
+	display: block;
+	font-size: 20px;
+	line-height: 1.5em;
+}

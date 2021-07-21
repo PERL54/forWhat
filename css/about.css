@@ -19,8 +19,8 @@
 {
 	background-color: rgba(0, 0, 0, 0.9);
 	grid-area: lang;
-	border: 1px #fff;
-	border: 1px solid white;
+	border: 1px #E8E8E8FF;
+	border: 1px solid #E8E8E8FF;
 }
 
 .lang-header
@@ -29,14 +29,14 @@
 	height: 2em;
 	line-height: 2em;
 	text-align: center;
-	border-bottom: 1px solid white;
-	background-color: white;
+	border-bottom: 1px solid #E8E8E8FF;
+	background-color: #E8E8E8FF;
 	font-weight: bolder;
 } 
 
 .lang-text
 {
-	color: white;
+	color: #E8E8E8FF;
 	padding: 2em;
 	font-weight: normal;
 }
@@ -46,7 +46,7 @@
 {
 	background-color: rgba(0, 0, 0, 0.9);
 	grid-area: me;
-	border: 1px solid white;
+	border: 1px solid #E8E8E8FF;
 	mix-blend-mode: difference;
 }
 
@@ -56,14 +56,14 @@
 	height: 2em;
 	line-height: 2em;
 	text-align: center;
-	background-color: white;
-	border-bottom: 1px solid white;
+	background-color: #E8E8E8FF;
+	border-bottom: 1px solid #E8E8E8FF;
 	font-weight: bolder;
 }
 
 .me-text
 {
-	color: white;
+	color: #E8E8E8FF;
 	padding: 2em;
 	font-weight: normal;
 }
@@ -71,7 +71,7 @@
 .secret
 {
 	color: black;
-	background-color: white;
+	background-color: #E8E8E8FF;
 	position: absolute;
 	top: 100%;
 }
