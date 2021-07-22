@@ -40,8 +40,10 @@ const windowInnerWidth = document.documentElement.clientWidth
 const windowInnerHeight = document.documentElement.clientHeight
 
 window.addEventListener('scroll', function() {
-    document.getElementById('current-scroll').style.width = ((window.pageYOffset * windowInnerWidth) / pageHeight).toString() + 'px';
+    let html = document.documentElement;
+    document.getElementById('current-scroll').style.width = (((window.pageYOffset * 100) / pageHeight) / 2.4 ).toString() + '%';
 });
+
 
 $(document).ready(function()
 {
